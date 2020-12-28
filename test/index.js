@@ -9,17 +9,17 @@ const expectedInput = {
 }
 
 describe("Ping", function() {
-    it("get ping", async function() {
+    it("Get ping", async function() {
         assert.deepStrictEqual(await ping(), true);
     });
 })
 describe("InputData", function() {
-    it("get input", async function() {
+    it("Get input", async function() {
         assert.deepStrictEqual(await getInputData(), expectedInput);
     });
 })
 describe("WriteAnswer", function() {
-    it("WriteAnswer", async function() {
+    it("Post answer", async function() {
         let outputResult = output(expectedInput)
         assert.deepStrictEqual(await writeAnswer(outputResult), true);
     });
